@@ -1,5 +1,4 @@
 # missedOpts
-<<<<<<< HEAD
 
 Mi$$ed Opportunitie$
 
@@ -27,6 +26,3 @@ Denis - HTML/CSS - Frontend
 Rodrigo - Backend
 
 George - Repo keeper - Rodrigo Aid - Backend
-=======
-hey hey hey
->>>>>>> f8bc78cfe6619357cfc4720845450c57d064ae62
