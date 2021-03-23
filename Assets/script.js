@@ -1,11 +1,8 @@
-var form = document.getElementById("form-id");
+var formSubmit = document.getElementById("myForm");
 
-document.getElementById("your-id").addEventListener("click", function (event) {
+document.getElementById("myForm").addEventListener("click", function (event) {
 event.preventDefault();
 
-if (true) {
-
-    console.log("Clicked!");
-
-}
+if(this.click)
+console.log("clicked!");
 });
