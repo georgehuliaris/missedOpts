@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 <body>
-    <section>
+    <!--Front Page Buttons-->
+    <div class="cyrpto_btn"><button>Cyrpto</button></div>
+    <div class="stock_btn"><button>Stock</button></div>
+
+
+    <header>
         <!--navigation------------------------->
         <nav>
         <!--logo-->
@@ -22,15 +28,12 @@
         <div class="toggle"></div>
         
         </nav>
-    </section>
-    <!--Front Page Buttons-->
-    <div class="cyrpto_btn"><button>Cyrpto</button></div>
-    <div class="stock_btn"><button>Stock</button></div>
+    </header>
 
     <form>
-    <header>
+    
         <div class="title">Crypto</div>
-    </header>
+
         <label for="invamount">Amount Invested:</label><br>
         <input type="text" id="invamount" name="invamount"><br>
 
@@ -42,10 +45,12 @@
         <label for="index">Asset Index:</label><br>
         <input type="text" id="index" name="index"><br>
 
-        <div class="submit_btn"><button>Sumbit</button></div>
+        <div class="submit_btn"><button>Submit</button></div>
         <div class="reset_btn"><button>Reset</button></div>
         
     </form>
     
+    <script src="./script.js"></script>
+
 </body>
 </html>
