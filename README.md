@@ -26,3 +26,11 @@ Denis - HTML/CSS - Frontend
 Rodrigo - Backend
 
 George - Repo keeper - Rodrigo Aid - Backend
+
+When a user comes to the page, they choose between cryptocurrency and stocks
+Then after they choose they will be sent to the crypto or stock portion selected
+When you click on the date field, you will be able to pick a day
+Then they can put in the desired asset to see the price of said asset from that day
+Then they can put in the desired amount they wish they would have invested to it that day 
+After that, they can see the price of selected stock or cryptocurrency and what invested wish amount would be today
+Then, using math, it will show the price of selected asset today and the difference of what your investment wish would be today
