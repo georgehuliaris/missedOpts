@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +8,12 @@
         integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
         crossorigin="anonymous"></script>
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
 </head>
 
-<body>
+<header>
     <!--navigation------------------------->
     <nav class="navigationCustom transparent">
         <div class="nav-wrapper">
@@ -31,6 +29,7 @@
             </div>
         </div>
     </nav>
+</header>
 
     <!-- left side column for user input  -->
     <div class="row">
@@ -107,46 +106,29 @@
             <!-- Teal page content  -->
         </div>
 
-    </div>
-    <!-- <form>
+    <div class="crypto_form">
         <header>
-            <div class="title">Ticker Here</div>
+        <div class="title">Crypto</div>
         </header>
-        <!-- this makes input field have button next to it 
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Go!
-                        </button>
-                    </div>
-                </div>
-            </form>
-         </div>
 
-         <!-- original code -->
-    <!-- <label for="invAmount">Amount Invested:</label>
-        <inpu type="text" id="invamount" name="invamount" placeholder="$$$">
+        <label for="invamount">Amount Invested:</label><br>
+        <input type="text" id="invamount" name="invamount"><br>
 
-            <button class="btn waves-effect waves-light prefix" type="submit" name="action">
-                <i class="material-icons">attach_money</i>
-            </button>
+        <label for="invdate">Investment Date:</label>
+        <input type="date" id="start" name="trip-start"
+        value="2021-07-22"
+        min="1980-01-01" max="2021-12-31"><br>
 
-            <label for="invdate">Investment Date:</label>
-            <input type="date" class="datepicker">
+        <label for="index">Asset Index:</label><br>
+        <input type="text" id="index" name="index"><br>
 
-            <div class="submit_btn"><button>Sumbit</button></div>
-            <div class="reset_btn"><button>Reset</button></div>
+        <form id="myForm" action="/action_page.php">
+            <input type="button" onclick="formSubmit" value="Submit"> </form>
+        <div class="reset_btn"><button>Reset</button></div>
+    </div>
 
-            <form id="form-id">
-                <button id="your-id">Click Me</button>
 
-            </form> -->
-
+        <script src="./Assets/script.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
