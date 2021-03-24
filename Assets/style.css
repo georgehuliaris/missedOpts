@@ -1,3 +1,12 @@
+body{
+    background: #007bff;
+}
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
 .cyrpto_btn button{
     position: absolute;
     top: 50%;
@@ -30,3 +39,77 @@
     background: #fff;
     cursor: pointer;
 }
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height:60px;
+	background-color:#ffffff;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	padding:0px 5%;
+	
+}
+
+nav ul{
+	display: flex;
+}
+.toggle{
+	display: none;
+}
+ 
+nav ul li a{
+	margin:30px;
+	font-family:myriad pro regular;
+	color:#505050;
+	font-size: 15px;
+	font-weight:700;
+}
+.logo{
+	font-family:RoadTest;
+	color:#000000;
+	font-size: 22px;
+}
+.active{
+	color:#2d2a2a;
+	font-weight:bold;
+}
+
+.crypto_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crypto_form.activeInfo{
+opacity: 1;
+z-index: 5;
+pointer-events: auto;
+transform: translate(-50%, -50%) scale(1);
+}
+
+.crypto_form{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.crypto_form .title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
