@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+        integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+        crossorigin="anonymous"></script>
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -15,24 +17,24 @@
 
 <body>
     <!--navigation------------------------->
-    <nav class="navigationCustom">
+    <nav class="navigationCustom transparent">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo " id="nameLogo">Missed Opportunities</a>
             <!-- toggle switch to switch between crypto and stock-->
             <div class="switch align-right">
                 <label>
-                    Crypto
-                    <input type="checkbox">
-                    <span class="lever"></span>
                     Stock
+                    <input type="checkbox" id="pageToggle">
+                    <span class= "lever"></span>
+                    Crypto
                 </label>
             </div>
         </div>
     </nav>
 
     <!-- left side column for user input  -->
-    <div class="row full-vh">
-        <div class="col s3 teal padding-left">
+    <div class="row">
+        <div class="col s3 transparent padding-left">
             <div class="divider"></div>
             <!-- search bar for ticker on left side -->
             <div class="section searchAside">
@@ -83,12 +85,12 @@
 
             </div>
         </div>
-        
+
         <!-- right aside panel to show API returns and information that user requested -->
-        <div class="col s9 grey">
+        <div class="col s9 transparent">
             <div class="divider"></div>
             <div class="section">
-                <h5>Section 1</h5>
+                <h5>Ticker:</h5>
                 <p>Stuff</p>
             </div>
             <div class="divider"></div>
@@ -101,6 +103,7 @@
                 <h5>Section 3</h5>
                 <p>Stuff</p>
             </div>
+            <div class="divider"></div>
             <!-- Teal page content  -->
         </div>
 
@@ -150,4 +153,5 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./Assets/script.js"></script>
+
 </html>
