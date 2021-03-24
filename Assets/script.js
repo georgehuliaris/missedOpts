@@ -1,3 +1,14 @@
+const cyrpto_btn = document.querySelector(".cyrpto_btn button");
+const stock_btn = document.querySelector(".stock_btn button");
+
+cyrpto_btn.onclick = ()=>{
+    crypto_form.classList.add("activecyrForm"); 
+}
+
+stock_btn.onclick = ()=>{
+    stock_form.classList.add("activestkform");
+}
+
 var formSubmit = document.getElementById("myForm");
 // this is the form submit button
 document.getElementById("myForm").addEventListener("click", function (event) {
@@ -22,6 +33,7 @@ let crypto = new chart(myChart, {
         labels:[],
         datasets:[],
     },
-        options:{};
+        options:{}
 
 });
+
