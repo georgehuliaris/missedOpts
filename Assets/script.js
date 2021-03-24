@@ -33,7 +33,7 @@ let crypto = new chart(myChart, {
 // let c = ${#open};
 // let d = ${#close};
 
-// function average(a, b) {
+// function average1(a, b) {
 //     // force the input as numbers *1
 // return ((a*1 + b*1) /2);
 // }
@@ -42,6 +42,30 @@ let crypto = new chart(myChart, {
 //         var a = document.getElementById("userInput1").value;
 //     var b = document.getElementById("userInput2").value;    		
 //     // pass the numbers to the average function!
-// alert(average(a,b));
+// return(average1(a,b));
+// }
+
+// function average2(c, d) {
+//     // force the input as numbers *1
+// return ((c*1 + d*1) /2);
+// }
+
+// document.getElementById("averageButton").onclick = function (){
+//         var a = document.getElementById("userInput1").value;
+//     var b = document.getElementById("userInput2").value;    		
+//     // pass the numbers to the average function!
+// return(average2(c,d));
+// }
+
+// function averageDone(average1, average2) {
+//     // force the input as numbers *1
+// return ((average1*1 + average2*1) /2);
+// }
+
+// document.getElementById("averageButton").onclick = function (){
+//         var a = document.getElementById("userInput1").value;
+//     var b = document.getElementById("userInput2").value;    		
+//     // pass the numbers to the average function!
+// return(averageDone(average1,average2));
 // }
 
