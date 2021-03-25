@@ -96,8 +96,8 @@ var change = todayAvg - historicalAvg;
 
 document.getElementById('change-result').innerHTML = change;
 
-comsole.log('historicalAvg', historicalAvg)
-comsole.log('change', change)
+console.log('historicalAvg', historicalAvg)
+console.log('change', change)
 
 }
 
