@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-const cryptoswitch = document.querySelector(".cryptoswitch");
-const stockswitch = document.querySelector(".stockswitch");
-const cryptoform = document.querySelector(".cryptoform");
-
-cryptoswitch.click = ()=>{
-    cryptoform-vh.classList.add("activeCrypto"); 
-}
-
-stock_btn.onclick = ()=>{
-    stockform.classList.add("activeStock");
-=======
 // toggles between crypto mode and stock mode 
 $('input[type="checkbox"]').click(function(){
     if($(this).is(":checked")){
@@ -29,7 +17,6 @@ cyrpto_btn.onclick = ()=>{
 
 stock_btn.onclick = ()=>{
     stock_form.classList.add("activestkform");
->>>>>>> 3573a470a48fb53f878fcc6304ba4c0094b07141
 }
 
 var formSubmit = document.getElementById("myForm");
@@ -61,16 +48,12 @@ formSubmit.submit();
 // function iexData(){
 //     var URL = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
-    type: 'line',
+    type: 'line'
     data:{
-        labels:[],
-        datasets:[],
-    },
-<<<<<<< HEAD
+        labels:[]
+        datasets:[]
+    }
         options:{}
-=======
-        options:{},
->>>>>>> 3573a470a48fb53f878fcc6304ba4c0094b07141
 
 });
 
