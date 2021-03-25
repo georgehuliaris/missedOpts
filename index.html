@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+        integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+        crossorigin="anonymous"></script>
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
 </head>
 
-<body>
+<header>
     <!--navigation------------------------->
-    <nav class="navigationCustom">
+    <nav class="navigationCustom transparent">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo " id="nameLogo">Missed Opportunities</a>
             <!-- toggle switch to switch between crypto and stock-->
+<<<<<<< HEAD
             <button class="cryptobutton">
                 Crypto
                 </button>
                 <button class="stockbutton">
                 Stock
                 </button>
+=======
+            <div class="switch align-right">
+                <label>
+                    Stock
+                    <input type="checkbox" id="pageToggle">
+                    <span class= "lever"></span>
+                    Crypto
+                </label>
+            </div>
+>>>>>>> 3573a470a48fb53f878fcc6304ba4c0094b07141
         </div>
     </nav>
+</header>
 
     <!-- left side column for user input  -->
+<<<<<<< HEAD
 <div class="cryptoform">
     <div class="row full-vh">
         <div class="col s3 teal padding-left">
+=======
+    <div class="row">
+        <div class="col s3 transparent padding-left">
+>>>>>>> 3573a470a48fb53f878fcc6304ba4c0094b07141
             <div class="divider"></div>
             <!-- search bar for ticker on left side -->
             <div class="section searchAside">
@@ -81,12 +98,12 @@
 
             </div>
         </div>
-        
+
         <!-- right aside panel to show API returns and information that user requested -->
-        <div class="col s9 grey">
+        <div class="col s9 transparent">
             <div class="divider"></div>
             <div class="section">
-                <h5>Section 1</h5>
+                <h5>Ticker:</h5>
                 <p>Stuff</p>
             </div>
             <div class="divider"></div>
@@ -99,54 +116,44 @@
                 <h5>Section 3</h5>
                 <p>Stuff</p>
             </div>
+            <div class="divider"></div>
             <!-- Teal page content  -->
         </div>
 
+<<<<<<< HEAD
     </div>
 </div>
     <!-- <form>
+=======
+    <div class="crypto_form">
+>>>>>>> 3573a470a48fb53f878fcc6304ba4c0094b07141
         <header>
-            <div class="title">Ticker Here</div>
+        <div class="title">Crypto</div>
         </header>
-        <!-- this makes input field have button next to it 
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Go!
-                        </button>
-                    </div>
-                </div>
-            </form>
-         </div>
 
-         <!-- original code -->
-    <!-- <label for="invAmount">Amount Invested:</label>
-        <inpu type="text" id="invamount" name="invamount" placeholder="$$$">
+        <label for="invamount">Amount Invested:</label><br>
+        <input type="text" id="invamount" name="invamount"><br>
 
-            <button class="btn waves-effect waves-light prefix" type="submit" name="action">
-                <i class="material-icons">attach_money</i>
-            </button>
+        <label for="invdate">Investment Date:</label>
+        <input type="date" id="start" name="trip-start"
+        value="2021-07-22"
+        min="1980-01-01" max="2021-12-31"><br>
 
-            <label for="invdate">Investment Date:</label>
-            <input type="date" class="datepicker">
+        <label for="index">Asset Index:</label><br>
+        <input type="text" id="index" name="index"><br>
 
-            <div class="submit_btn"><button>Sumbit</button></div>
-            <div class="reset_btn"><button>Reset</button></div>
+        <form id="myForm" action="/action_page.php">
+            <input type="button" onclick="formSubmit" value="Submit"> </form>
+        <div class="reset_btn"><button>Reset</button></div>
+    </div>
 
-            <form id="form-id">
-                <button id="your-id">Click Me</button>
 
-            </form> -->
-
+        <script src="./Assets/script.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./Assets/script.js"></script>
+
 </html>
