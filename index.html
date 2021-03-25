@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
-        integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
-        crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+    <link rel="stylesheet" href="./Assets/style.css">
+
 </head>
 
 <header>
@@ -23,7 +23,7 @@
                 <label>
                     Stock
                     <input type="checkbox" id="pageToggle">
-                    <span class= "lever"></span>
+                    <span class="lever"></span>
                     Crypto
                 </label>
             </div>
@@ -31,6 +31,7 @@
     </nav>
 </header>
 
+<<<<<<< HEAD
     <!-- left side column for user input  -->
     <div class="row">
         <div class="col s3 transparent padding-left">
@@ -48,91 +49,111 @@
                         </button>
                     </div>
                     </form>
-                </div>
-            </div>
+=======
+<!-- left side column for user input  -->
+<div class="row">
+    <div class="col s3 transparent padding-left">
+        <div class="divider"></div>
+        <!-- search bar for ticker on left side -->
+        <div class="section searchAside">
 
-            <!-- date picker  -->
-            <div class="divider"></div>
-            <div class="section">
-                <h5>Select a date to see Historical Data</h5>
+            <h5>Search for a ticker</h5>
+            <div class="row tickContainer">
+                <div class="input-field col tickInput">
+                    <input id="Ticker" type="text" class="validate">
+                    <label for="Ticker">Ticker</label>
+>>>>>>> 94ab77bcbfaf9dc8e379c405662df6c5a33b5650
+                </div>
+                <div class="input-field col tickBtn">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Go!
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- date picker  -->
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Select a date to see Historical Data</h5>
+            <div class="">
                 <div class="">
-                    <div class="">
-                        <label for="invdate">Investment Date:</label>
-                        <input type="date" class="datepicker">
-                    </div>
+                    <label for="invdate">Investment Date:</label>
+                    <input type="date" class="datepicker">
                 </div>
-            </div>
-            <div class="divider"></div>
-            <div class="section">
-
-                <!-- input for average price -->
-                <!-- this input is for the user to find out how much stock they can own if they put x amount of money into it -->
-                <h5>Own the stock?</h5>
-                <!-- need 2 input fields on same row  -->
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">attach_money</i>
-                    <input id="average_price" type="text" class="validate">
-                    <label for="average_price">Average Price</label>
-                </div>
-                <span class="col s3 input-field multiplier">x</span>
-                <div class="input-field col s3">
-                    <input id="num_shares" type="text" class="validate">
-                    <label for="num_shares">Shares</label>
-                </div>
-
-
             </div>
         </div>
+        <div class="divider"></div>
+        <div class="section">
 
-        <!-- right aside panel to show API returns and information that user requested -->
-        <div class="col s9 transparent">
-            <div class="divider"></div>
-            <div class="section">
-                <h5>Ticker:</h5>
-                <p>Stuff</p>
+            <!-- input for average price -->
+            <!-- this input is for the user to find out how much stock they can own if they put x amount of money into it -->
+            <h5>Own the stock?</h5>
+            <!-- need 2 input fields on same row  -->
+            <div class="input-field col s6">
+                <i class="material-icons prefix">attach_money</i>
+                <input id="average_price" type="text" class="validate">
+                <label for="average_price">Average Price</label>
             </div>
-            <div class="divider"></div>
-            <div class="section">
-                <h5>Section 2</h5>
-                <p>Stuff</p>
+            <span class="col s3 input-field multiplier">x</span>
+            <div class="input-field col s3">
+                <input id="num_shares" type="text" class="validate">
+                <label for="num_shares">Shares</label>
             </div>
-            <div class="divider"></div>
-            <div class="section">
-                <h5>Section 3</h5>
-                <p>Stuff</p>
-            </div>
-            <div class="divider"></div>
-            <!-- Teal page content  -->
+
+
         </div>
+    </div>
+
+    <!-- right aside panel to show API returns and information that user requested -->
+    <div class="col s9 transparent">
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Ticker:</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 3</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <!-- Teal page content  -->
+    </div>
 
     <div class="crypto_form">
         <header>
-        <div class="title">Crypto</div>
+            <div class="title">Crypto</div>
         </header>
 
         <label for="invamount">Amount Invested:</label><br>
         <input type="text" id="invamount" name="invamount"><br>
 
         <label for="invdate">Investment Date:</label>
-        <input type="date" id="start" name="trip-start"
-        value="2021-07-22"
-        min="1980-01-01" max="2021-12-31"><br>
+        <input type="date" id="start" name="trip-start" value="2021-07-22" min="1980-01-01" max="2021-12-31"><br>
 
         <label for="index">Asset Index:</label><br>
         <input type="text" id="index" name="index"><br>
 
         <form id="myForm" action="/action_page.php">
-            <input type="button" onclick="formSubmit" value="Submit"> </form>
+            <input type="button" onclick="formSubmit" value="Submit">
+        </form>
         <div class="reset_btn"><button>Reset</button></div>
     </div>
 
-
-        <script src="./Assets/script.js"></script>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./Assets/script.js"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+        integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./Assets/script.js"></script>
 
 </html>
