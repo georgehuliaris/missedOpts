@@ -1,3 +1,15 @@
+const cryptoswitch = document.querySelector(".cryptoswitch");
+const stockswitch = document.querySelector(".stockswitch");
+const cryptoform = document.querySelector(".cryptoform");
+
+cryptoswitch.click = ()=>{
+    cryptoform-vh.classList.add("activeCrypto"); 
+}
+
+stock_btn.onclick = ()=>{
+    stockform.classList.add("activeStock");
+}
+
 var formSubmit = document.getElementById("myForm");
 // this is the form submit button
 document.getElementById("myForm").addEventListener("click", function (event) {
@@ -22,6 +34,6 @@ let crypto = new chart(myChart, {
         labels:[],
         datasets:[],
     },
-        options:{};
+        options:{}
 
 });
