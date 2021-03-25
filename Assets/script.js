@@ -1,13 +1,19 @@
 //toggle function between crypto mode and stock mode
-// const checkBox = document.querySelector("input[type=checkbox]");
-// let body = document.body;
-// checkBox.addEventListener('change', function() {
-//     if (checkBox.checked){
-//       body.classList.toggle('cryptoMode');
-//     } else {
-//        body.classList.toggle('stockMode');
-//     }
-//   });
+// when toggling to crypto mode it should change the body, header, and main container
+// body should change background
+//header should turn transparent
+//main container should also turn transparent 
+const checkBox = document.querySelector("input[type=checkbox]");
+let body = document.body;
+checkBox.addEventListener('change', function() {
+    if (checkBox.checked) {
+        body.classList.toggle('cryptoMode');
+
+    } else {
+        body.classList.toggle('stockMode');
+
+    }
+});
 
 
 // const cyrpto_btn = document.querySelector(".cyrpto_btn button");
@@ -150,5 +156,3 @@
 //     // pass the numbers to the average function!
 // return(averageDone(average1,average2));
 // }
-
-

@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+.container-flex {
+    display: flex;
+    width: 100%;
+}
+
+
+/* crypto class */
 
 .cryptoMode {
     background: url(./images/vaporwavesun.jpg);
@@ -12,13 +19,38 @@
     background-attachment: fixed;
 }
 
-body {
-    background-color: #413f46;
-
-}
-
 .transparent {
     background-color: transparent;
+}
+
+
+/* end crypto toggle  */
+
+
+/* stock class */
+
+body {
+    background-color: #413f46;
+}
+
+.wolf {
+    background-color: #633c18;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: -5px 5px 15px black;
+}
+
+.wallStreet {
+    background-color: #2f241e;
+}
+
+
+/* end stock toggle */
+
+.align-middle {
+    height: 90vh;
+    align-items: center;
 }
 
 .nav-wrapper {
@@ -50,14 +82,4 @@ body {
     margin: 0;
     display: flex;
     width: 100%;
-}
-
-.multiplier {
-    text-align: center;
-    top: .5rem;
-    font-weight: bolder;
-}
-
-.divider {
-    background-color: black;
 }
