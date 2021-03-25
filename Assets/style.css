@@ -12,10 +12,12 @@
     background-attachment: fixed;
 }
 
-.stockMode {
-    
+body {
+    background-color: #413f46;
+
 }
-transparent {
+
+.transparent {
     background-color: transparent;
 }
 
