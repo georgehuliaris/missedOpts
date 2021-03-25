@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.cryptoMode {
+    background: url(./images/vaporwavesun.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+transparent {
+    background-color: transparent;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3rem;
+}
+
+.align-right {
+    margin-left: auto;
+    padding-right: 3rem;
+}
+
+.searchAside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchAside h5 {
+    text-align: start;
+    width: 100%;
+}
+
+.row .col .tickInput {
+    width: 100%;
+}
+
+.row .col .tickContainer {
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.multiplier {
+    text-align: center;
+    top: .5rem;
+    font-weight: bolder;
+}
+
+.divider {
+    background-color: black;
+}
