@@ -14,17 +14,6 @@ function iexData(){
 
 }
 
-let myChart = document.getElementById("myChart").getContext("2D");
-let crypto = new chart(myChart, {
-
-    type: 'line',
-    data:{
-        labels:[],
-        datasets:[],
-    },
-        options:{},
-
-});
 document.getElementById('average').onclick = async function () {
 
     var url = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
