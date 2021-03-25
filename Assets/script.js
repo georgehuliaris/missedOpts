@@ -22,6 +22,6 @@ let crypto = new chart(myChart, {
         labels:[],
         datasets:[],
     },
-        options:{};
+        options:{},
 
 });
