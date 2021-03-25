@@ -1,11 +1,11 @@
-// $('input[type="checkbox"]').click(function(){
-//     if($(this).is(":checked")){
-//        $('body').toggleClass('cryptoMode');
-//     }
-//     else if($(this).is(":not(:checked)")){
-//        console.log('deactivated');
-//     }
-// });
+$('input[type="checkbox"]').click(function(){
+    if($(this).is(":checked")){
+        $('body').toggleClass('cryptoMode');
+    }
+    else if($(this).is(":not(:checked)")){
+        console.log('deactivated');
+    }
+});
 
 function toggleSwitch() {
     const checkBox = document.getElementById('pageToggle');
