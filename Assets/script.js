@@ -1,15 +1,27 @@
-// toggles between crypto mode and stock mode 
-$('input[type="checkbox"]').click(function(){
-    if($(this).is(":checked")){
-       $('body').toggleClass('cryptoMode');
+// $('input[type="checkbox"]').click(function(){
+//     if($(this).is(":checked")){
+//        $('body').toggleClass('cryptoMode');
+//     }
+//     else if($(this).is(":not(:checked)")){
+//        console.log('deactivated');
+//     }
+// });
+
+function toggleSwitch() {
+    const checkBox = document.getElementById('pageToggle');
+    const element = document.body;
+    if (checkBox.checked == true) {
+        element.classList.toggle('cryptoMode');
+    } else {
+        element.classList.toggle('stockMode');
     }
-    else if($(this).is(":not(:checked)")){
-       console.log('deactivated');
-    }
-});
+}
+
 
 const cyrpto_btn = document.querySelector(".cyrpto_btn button");
 const stock_btn = document.querySelector(".stock_btn button");
+// toggles between crypto mode and stock mode 
+
 
 cyrpto_btn.onclick = ()=>{
     crypto_form.classList.add("activecyrForm"); 
