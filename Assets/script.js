@@ -28,15 +28,24 @@ input.addEventListener('change', function() {
 
 document.getElementById('average').onclick = async function() {
 
-    var url = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
+    var today = new Date();
+    //var fechahoy = today.getFullYear()+""+(today.getMonth()+1)+""+today.getDate();;
+    var fechahoy = "20210325";
+    var fechaHist =document.getElementById('hist_date').value;
+    fechaHist = fechaHist.replaceAll("-","");
+    var ticker=document.getElementById('Ticker').value;
+
+    var url = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+fechahoy+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
     var todayAvg;
     console.log(todayAvg)
 
     await $.get(url, function(data) {
         console.log('todays data', data)
-        var open = data.open;
-        var close = data.close;
+
+        const lastData = data.slice(-1).pop();
+        var open = lastData.open;
+        var close = lastData.close;
 
         todayAvg = average(open, close);
     });
@@ -45,29 +54,29 @@ document.getElementById('average').onclick = async function() {
 
 
     var historicalAvg;
-    var endOfDayURL = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
+    var historicalURL = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+fechaHist+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
-    await $.get(endOfDayURL, function(data) {
+    await $.get(historicalURL, function(data) {
+        console.log('historic data', data)
 
         const lastData = data.slice(-1).pop();
-        if (lastData) {
-            var open = lastData.open;
-            var close = lastData["close data"];
-            historicalAvg = average(open, close);
-        }
+        var open = lastData.open;
+        var close = lastData.close;
+
+        historicalAvg = average(open, close);
     });
 
     var change = todayAvg - historicalAvg;
 
     document.getElementById('change-result').innerHTML = change;
 
-    comsole.log('historicalAvg', historicalAvg)
-    comsole.log('change', change)
+    console.log('historicalAvg', historicalAvg)
+    console.log('change', change)
 
 }
 
 function average(a, b) {
-    console.log(a, b)
+    console.log("AVG:",a, b)
     return (a + b) / 2;
 
 }
