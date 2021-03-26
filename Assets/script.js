@@ -30,13 +30,12 @@ document.getElementById('average').onclick = async function() {
 
 
     var today = new Date();
-    //var fechahoy = today.getFullYear()+""+(today.getMonth()+1)+""+today.getDate();;
-    var fechahoy = "20210325";
-    var fechaHist =document.getElementById('hist_date').value;
-    fechaHist = fechaHist.replaceAll("-","");
+    var presentDate = "20210325";
+    var histDate =document.getElementById('histDate').value;
+    histDate = histDate.replaceAll("-","");
     var ticker=document.getElementById('Ticker').value;
 
-    var url = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+fechahoy+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
+    var url = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+presentDate+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
     var todayAvg;
     console.log(todayAvg)
 
@@ -54,7 +53,7 @@ document.getElementById('average').onclick = async function() {
 
 
     var historicalAvg;
-    var historicalURL = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+fechaHist+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
+    var historicalURL = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+histDate+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
     await $.get(historicalURL, function(data) {
         console.log('historic data', data)
