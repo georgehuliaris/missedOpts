@@ -18,6 +18,7 @@ document.getElementById('average').onclick = async function() {
     var histDate =document.getElementById('histDate').value;
     histDate = histDate.replaceAll("-","");
     var ticker=document.getElementById('Ticker').value;
+    document.getElementById('pTick').innerHTML = ticker;
 
     var url = "https://cloud.iexapis.com/stable/stock/"+ticker+"/chart/date/"+presentDate+"?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
     var todayAvg;
@@ -50,6 +51,9 @@ document.getElementById('average').onclick = async function() {
     });
 
     var change = todayAvg - historicalAvg;
+
+    change = change.toFixed(2);
+    change = "$"+change;
 
     document.getElementById('change-result').innerHTML = change;
 
