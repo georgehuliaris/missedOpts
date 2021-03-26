@@ -28,7 +28,7 @@ input.addEventListener('change', function() {
 
 document.getElementById('average').onclick = async function() {
 
-    var url = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
+    var url = "https://cloud.iexapis.com/stable/stock/AAPL/quote?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
     var todayAvg;
     console.log(todayAvg)
@@ -41,11 +41,13 @@ document.getElementById('average').onclick = async function() {
         todayAvg = average(open, close);
     });
 
-    console.log('todayAvg', todayAvg)
+    console.log('todayAvg', todayAvg);
+
+    var userSelectedDate = "20210325";
 
 
     var historicalAvg;
-    var endOfDayURL = "https://cloud.iexapis.com/v1?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
+    var endOfDayURL = "https://cloud.iexapis.com/stable/stock/AAPL/chart/date/20210325?token=pk_95cd7c4ff00744a5a178e9fecad2319e";
 
     await $.get(endOfDayURL, function(data) {
 
