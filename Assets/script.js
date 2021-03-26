@@ -3,26 +3,10 @@
 // body should change background
 //header should turn transparent
 //main container should also turn transparent 
-const checkBox = document.querySelector("input[type=checkbox]");
-let body = document.body;
-checkBox.addEventListener('change', function() {
-    if (checkBox.checked) {
-        body.classList.toggle('cryptoMode');
+const chk = document.getElementById('chk');
 
-    } else {
-        body.classList.toggle('stockMode');
-
-    }
-});
-
-var input = document.querySelector('#pageToggle');
-
-input.addEventListener('change', function() {
-    if (this.checked) {
-        console.log('crypto');
-    } else {
-        console.log('stock');
-    }
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
 });
 
 

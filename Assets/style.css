@@ -9,29 +9,69 @@
 }
 
 
-/* crypto class */
+/* checkbox class */
 
-.cryptoMode {
-    background: url(./images/vaporwavesun.jpg);
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(./images/stockimage.jpg);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+	transition: background 0.2s linear;
 }
 
-.transparent {
-    background-color: transparent;
+body.dark {
+	background-image: url(./images/vaporwavesun.jpg);
 }
 
-
-/* end crypto toggle  */
-
-
-/* stock class */
-
-body {
-    background-color: #413f46;
+.checkbox {
+	opacity: 0;
+	position: absolute;
 }
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	position: absolute;
+    top: 25px; 
+    right: 45px;
+	height: 26px;
+	width: 130px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(40px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(55px);
+}
+
+.stock {
+	color: #f10fd3;
+}
+.crypto {
+	color: #4312f3;
+}
+
+/* end checkbox */
 
 .wolf {
     background-color: #633c18;
